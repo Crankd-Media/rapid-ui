@@ -1,4 +1,4 @@
-[type="text"] {
-    border: 1px solid #000;
-    border-radius: 5px;
+[type="text"],
+select {
+  @apply border-gray-200 rounded shadow-sm w-full;
 }

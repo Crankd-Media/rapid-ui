@@ -68,18 +68,8 @@ class RapidUIProvider extends ServiceProvider
     private function registerComponents(): self
     {
 
-
         Blade::component('rapid::code-block', CodeBlock::class);
 
-
-        // Navigation
-        // Blade::component('manage-fields', 'manage-fields');
-
-        // Blade::component('navigation.stacked', Stacked::class);
-        // Blade::component('navigation.sidebar', Sidebar::class);
-
-        // Blade::componentNamespace('Crankd\\LaravelPages\\View\\Components\\Navigation', 'stacked');
-        // Blade::componentNamespace('Crankd\\LaravelPages\\View\\Components\\Navigation', 'sidebar');
         return $this;
     }
 }
