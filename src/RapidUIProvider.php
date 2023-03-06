@@ -32,8 +32,10 @@ class RapidUIProvider extends ServiceProvider
 
         $this->registerComponents(); // Register the components
 
+
+        // resource_path js
         $this->publishes([
-            self::PATH_ASSETS => public_path('crankd/rapid-ui/js'), // Publish the assets
+            self::PATH_ASSETS => resource_path('js/crankd/rapid-ui/js'), // Publish the assets
         ], 'rapid-ui-publishes');
     }
 
