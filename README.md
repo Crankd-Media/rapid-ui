@@ -9,6 +9,10 @@ php artisan vendor:publish --provider="Crankd\RapidUI\RapidUIProvider"
 import "../crankd/rapid-ui/js/rapid-ui.js";
 import "../crankd/rapid-custom-fields/js/rapid-custom-fields.js";
 
+## REMOVE
+
+composer remove crankd/rapid-ui
+
 ## LOCAL DEV SETUP
 
 Crankd\RapidUI\RapidUIProvider::class,
@@ -25,4 +29,4 @@ Crankd\RapidUI\RapidUIProvider::class,
     </pre>
 
 import "../../packages/crankd/rapid-ui/resources/js/rapid-ui";
-import "../../packages/crankd/rapid-ui/resources/css/rapid-css.css";
+import "../../packages/crankd/rapid-ui/resources/css/rapid-ui.css";
