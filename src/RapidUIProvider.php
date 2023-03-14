@@ -28,7 +28,7 @@ class RapidUIProvider extends ServiceProvider
     {
         $this->offerPublishing(); // Publish the config file
 
-        $this->loadViewsFrom(self::PATH_VIEWS, 'rapid-ui'); // Load the views
+        $this->loadViewsFrom(self::PATH_VIEWS, 'rapid'); // Load the views
 
         $this->registerComponents(); // Register the components
 
@@ -73,9 +73,9 @@ class RapidUIProvider extends ServiceProvider
      */
     private function registerComponents(): self
     {
-
         Blade::component('rapid::code-block', CodeBlock::class);
 
+        // 
         return $this;
     }
 }

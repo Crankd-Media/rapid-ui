@@ -27,8 +27,11 @@ class CodeBlock extends Component
     public function render()
     {
         return function ($data) {
+
+            // excape the blade tags <x- and </x-
             $str = str_replace(['<x-', '</x-'], ['&lt;x-', '&lt;/x-'], $data['slot']);
-            // $str = preg_replace('/\s+$/m', '', $str);
+
+
             return '<pre class="shadow-lg rounded-lg language-' . $this->language . '"><code>' .  $str . '</code></pre>';
         };
     }
